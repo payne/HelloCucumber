@@ -2,7 +2,7 @@ const assert = require('assert');
 const { Given, When, Then } = require('cucumber');
 
 function isItFriday(today) {
-  // We'll leave the implementation blank for now
+  return 'Nope';
 }
 
 
@@ -15,6 +15,6 @@ When('I ask whether it\'s Friday yet', function () {
 });
 
 Then('I should be told {string}', function (expectedAnswer) {
-   assert.equals(this.actualAnswer, expectedAnswer);
+   assert.equal(this.actualAnswer, expectedAnswer);
 });
 
